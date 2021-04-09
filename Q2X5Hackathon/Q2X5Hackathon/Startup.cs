@@ -37,12 +37,12 @@ namespace Q2X5Hackathon
             services.AddControllersWithViews();
             services.AddAuthentication().AddGoogle(options =>
             {
-                options.ClientId = "61554165861-74gvvooegjd1jueqdk4v5jnesqvp93ip.apps.googleusercontent.com";
-                options.ClientSecret = "1-P_Ls2BbgBlLwXoIo9Lx-NO";
+                options.ClientId = "314407296625-fno4j56dinur6866b35oc36c2n8fhet9.apps.googleusercontent.com";
+                options.ClientSecret = "HLRYBUuEeD6Vbgo_hPtlPsrR";
             });
             services.AddSession(options =>
             {
-                options.IdleTimeout = TimeSpan.FromMinutes(30);
+                options.IdleTimeout = TimeSpan.FromMinutes(3);
                 options.Cookie.HttpOnly = true;
                 options.Cookie.IsEssential = true;
             });
